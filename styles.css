@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#countdown {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+#countdown h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timer span {
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.popup {
+    position: fixed;
+    top: -10%;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem; /* Default padding */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 1s ease-out, top 1.5s ease-out;
+    margin-bottom: 10px;
+}
+
+.popup.active {
+    top: 20%;
+    opacity: 1;
+}
+
+.popup-content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+}
+
+.buttons button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.modal-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .popup {
+        left: 10px;
+        right: 10px;
+        padding: 1rem; 
+        top: 10px;
+    }
+
+    .popup.active {
+        top: 10px; 
+    }
+
+    .popup-content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; 
+    }
+
+    .popup-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .buttons button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        max-width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
