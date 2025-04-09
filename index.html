@@ -16,12 +16,9 @@
         </div>
     </div>
 
-    <audio id="bgMusic" loop>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
+    <audio id="bgMusic"></audio>
 
     <div class="music-control">
-        <i class="fas fa-music"></i>
         <i class="fas fa-volume-up"></i>
     </div>
 
@@ -35,10 +32,32 @@
                     <img src="img/profile.png" alt="Profile Picture" class="profile-pic">
                 </div>
             </div>
-            
             <div class="weeb-elements"></div>
             
             <div class="left-content">
+                <div class="discord-presence">
+                    <div class="presence-header">
+                        <div class="presence-status"></div>
+                        <div class="presence-username">Discord Presence</div>
+                        <div class="presence-pagination">
+                            <button class="page-prev" disabled><i class="fas fa-chevron-left"></i></button>
+                            <span class="page-indicator">1/1</span>
+                            <button class="page-next" disabled><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="presence-content">
+                        <div class="presence-activity">
+                            <div class="activity-icon-container"></div>
+                            <div class="activity-details">
+                                <div class="activity-name"></div>
+                                <div class="activity-state"></div>
+                                <div class="activity-details-line"></div>
+                            </div>
+                        </div>
+                        <div class="presence-status-text"></div>
+                    </div>
+                </div>
+
                 <div class="anime-spotlight">
                     <div class="spotlight-title">Favorite Characters</div>
                     <div class="character-grid">
@@ -80,115 +99,121 @@
         
         <div class="right-panel">
             <div class="content">
-                <h1 class="name">craw <span class="pronouns">(@crawqxx)</span></h1>
-                <h2 class="title"><span class="pronouns">they/them</span></h2>
-                
-                <div class="section">
-                    <h3 class="section-title"><i class="fas fa-user"></i> About Me</h3>
-                    <p class="section-content">weeb, do programming, know lua/python, omw to learn c# and c++</p>
+                <div class="header-section">
+                    <h1 class="name">craw <span class="pronouns">(@crawqxx)</span></h1>
+                    <h2 class="title"><span class="pronouns">they/them</span></h2>
                 </div>
                 
-                <div class="section">
-                    <h3 class="section-title"><i class="fas fa-heart"></i> Interests</h3>
-                    <div class="tags">
-                        <span class="tag">Anime</span>
-                        <span class="tag">Manga</span>
-                        <span class="tag">Programming</span>
-                        <span class="tag">Gaming</span>
-                        <span class="tag">Music</span>
-                        <span class="tag">Lua</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">C++</span>
+                <div class="left-content-section">
+                    <div class="section">
+                        <h3 class="section-title"><i class="fas fa-user"></i> About Me</h3>
+                        <p class="section-content">weeb, do programming, know lua/python, omw to learn c# and c++</p>
                     </div>
-                </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title"><i class="fas fa-heart"></i> Interests</h3>
+                        <div class="tags">
+                            <span class="tag">Anime</span>
+                            <span class="tag">Manga</span>
+                            <span class="tag">Programming</span>
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Music</span>
+                            <span class="tag">Lua</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
 
-                <div class="section">
-                    <h3 class="section-title"><i class="fas fa-fire"></i> Top Projects</h3>
-                    <div class="link-tree">
-                        <a href="https://github.com/crawqxx/SubterPresence" class="link-item" target="_blank">
-                            <i class="fas fa-code-branch"></i>
-                            <span>SubterPresence</span>
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                        <a href="https://github.com/crawqxx/RBLX-Username" class="link-item" target="_blank">
-                            <i class="fas fa-gamepad"></i>
-                            <span>RBLX-Username</span>
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
+                    <div class="section">
+                        <h3 class="section-title"><i class="fas fa-fire"></i> Top Projects</h3>
+                        <div class="link-tree">
+                            <a href="https://github.com/crawqxx/SubterPresence" class="link-item" target="_blank">
+                                <i class="fas fa-code-branch"></i>
+                                <span>SubterPresence</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a href="https://github.com/crawqxx/RBLX-Username" class="link-item" target="_blank">
+                                <i class="fas fa-gamepad"></i>
+                                <span>RBLX-Username</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="section link-section">
-                    <h3 class="section-title"><i class="fas fa-link"></i> All Links</h3>
-                    <div class="link-grid">
-                        <div class="link-category">
-                            <h4 class="category-title">Main Links</h4>
-                            <div class="link-items">
-                                <a href="https://roblox.com/users/1680019831/profile" class="link-item" target="_blank">
-                                    <i class="fas fa-gamepad"></i>
-                                    <span>Roblox</span>
-                                </a>
-                                <a href="https://youtube.com/@crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>YouTube</span>
-                                </a>
-                                <a href="https://t.me/crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-telegram"></i>
-                                    <span>Telegram</span>
-                                </a>
-                                <a href="https://discord.com/users/1302905329398321152" class="link-item" target="_blank">
-                                    <i class="fab fa-discord"></i>
-                                    <span>Discord</span>
-                                </a>
-                                <a href="https://monkeytype.com/profile/crawqxx" class="link-item" target="_blank">
-                                    <i class="fas fa-keyboard"></i>
-                                    <span>MonkeyType</span>
-                                </a>
+                <div class="right-content-section">
+                    <div class="section link-section">
+                        <h3 class="section-title"><i class="fas fa-link"></i> All Links</h3>
+                        <div class="link-grid">
+                            <div class="link-category">
+                                <h4 class="category-title">Main Links</h4>
+                                <div class="link-items">
+                                    <a href="https://roblox.com/users/1680019831/profile" class="link-item" target="_blank">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Roblox</span>
+                                    </a>
+                                    <a href="https://youtube.com/@crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                    <a href="https://t.me/crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-telegram"></i>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <a href="https://discord.com/users/1302905329398321152" class="link-item" target="_blank">
+                                        <i class="fab fa-discord"></i>
+                                        <span>Discord</span>
+                                    </a>
+                                    <a href="https://monkeytype.com/profile/crawqxx" class="link-item" target="_blank">
+                                        <i class="fas fa-keyboard"></i>
+                                        <span>MonkeyType</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="link-category">
-                            <h4 class="category-title">Contact</h4>
-                            <div class="link-items">
-                                <a href="https://snapchat.com/add/crraaw" class="link-item" target="_blank">
-                                    <i class="fab fa-snapchat"></i>
-                                    <span>Snapchat</span>
-                                </a>
-                                <a href="https://x.com/craww" class="link-item" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                    <span>Twitter/X</span>
-                                </a>
-                                <a href="https://reddit.com/user/crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-reddit"></i>
-                                    <span>Reddit</span>
-                                </a>
-                                <a href="https://pinterest.com/crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-pinterest"></i>
-                                    <span>Pinterest</span>
-                                </a>
-                                <a href="https://github.com/crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
+                            
+                            <div class="link-category">
+                                <h4 class="category-title">Contact</h4>
+                                <div class="link-items">
+                                    <a href="https://snapchat.com/add/crraaw" class="link-item" target="_blank">
+                                        <i class="fab fa-snapchat"></i>
+                                        <span>Snapchat</span>
+                                    </a>
+                                    <a href="https://x.com/craww" class="link-item" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter/X</span>
+                                    </a>
+                                    <a href="https://reddit.com/user/crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-reddit"></i>
+                                        <span>Reddit</span>
+                                    </a>
+                                    <a href="https://pinterest.com/crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-pinterest"></i>
+                                        <span>Pinterest</span>
+                                    </a>
+                                    <a href="https://github.com/crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="link-category">
-                            <h4 class="category-title">Music</h4>
-                            <div class="link-items">
-                                <a href="https://open.spotify.com/user/31dm7fjqmmituro2fpbo3pd7cftq" class="link-item" target="_blank">
-                                    <i class="fab fa-spotify"></i>
-                                    <span>Spotify</span>
-                                </a>
-                                <a href="https://soundcloud.com/crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-soundcloud"></i>
-                                    <span>SoundCloud</span>
-                                </a>
-                                <a href="https://last.fm/user/crawqxx" class="link-item" target="_blank">
-                                    <i class="fab fa-lastfm"></i>
-                                    <span>Last.fm</span>
-                                </a>
+                            
+                            <div class="link-category">
+                                <h4 class="category-title">Music</h4>
+                                <div class="link-items">
+                                    <a href="https://open.spotify.com/user/31dm7fjqmmituro2fpbo3pd7cftq" class="link-item" target="_blank">
+                                        <i class="fab fa-spotify"></i>
+                                        <span>Spotify</span>
+                                    </a>
+                                    <a href="https://soundcloud.com/crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-soundcloud"></i>
+                                        <span>SoundCloud</span>
+                                    </a>
+                                    <a href="https://last.fm/user/crawqxx" class="link-item" target="_blank">
+                                        <i class="fab fa-lastfm"></i>
+                                        <span>Last.fm</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
